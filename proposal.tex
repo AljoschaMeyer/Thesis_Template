@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+
+\usepackage{cite}
+
+\usepackage{macros}
+
+\title{Some Interesting Title}
+\author{Firstname Lastname}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Here's the pitch for the thesis I would like to write.
+\end{abstract}
+
+\section{Introduction}\label{introduction}
+
+One of the problems that needs to be solved bla bla bla. Hey, I can use macros \examplemacro{that were defined} in the macros.tex file.
+
+\section{The Main Stuff}\label{stuff}
+
+Tell us about the problem, your approach, the work you plan to do.
+
+\section{Related Work}\label{related-work}
+
+A wise person once said, the only useful algorithm known to mankind is rsync~\cite{tridgell1996rsync}.
+
+\section*{Work Plan}
+
+\begin{itemize}
+\item by 05.05: stuff!
+\item by 26.05: things!
+\item by 16.06: objects!
+\item by 07.07: concepts!
+\item by 28.07: ideas!
+\end{itemize}
+
+\bibliographystyle{alphaurl}
+\bibliography{proposal}% collect references in proposal.bib
+
+\end{document}
